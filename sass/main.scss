@@ -1,0 +1,38 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/media";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/tools";
+
+
+@import "components/button";
+@import "components/card";
+@import "components/resume";
+@import "components/logo";
+@import "components/p-picture";
+@import "components/feacture-box";
+@import "components/form";
+@import "components/composition";
+// @import "components/timeline2";
+@import "components/timeline";
+
+
+@import "layout/nevbar";
+// @import "layout/nevbar2";
+@import "layout/header";
+@import "layout/grid";
+
+@import "layout/home";
+@import "layout/project";
+@import "layout/about";
+@import "layout/footer";
+
+@import "pages/home";
+// @import "pages/test";
+// @import "pages/test_for_nav";
+
+
+
+// @import "components/p-picture";

@@ -1,0 +1,66 @@
+.row {
+  max-width: $grid-width;
+  // background-color: aqua;
+  display: flex;
+  margin: 0 auto;
+
+  @include respond(tab-land) {
+    max-width: 90%;
+
+  }
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+
+    @include respond(tab-port) {
+      margin-bottom: $gutter-vertical-small;
+    }
+
+  }
+
+
+
+
+  // margin: 0 auto;
+}
+
+
+[class^="col-"] {
+
+  &:not(:last-child) {
+    margin-right: $gutter-horizontal;
+
+    @include respond(tab-port) {
+      margin-right: 0;
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  @include respond(tab-port) {
+    width: 100% !important;
+  }
+
+}
+
+.col-1-of-2 {
+  width: calc((100%)/2)-2.8;
+
+  background-color: skyblue;
+}
+
+.col-1-of-3 {
+  width: calc((100%)/3)-2.8;
+
+
+
+}
+
+.col-1-of-4 {
+  width: calc((100%)/4)-2.8;
+
+
+}

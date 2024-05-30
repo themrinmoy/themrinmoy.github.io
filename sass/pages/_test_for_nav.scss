@@ -1,0 +1,32 @@
+.navigation__nav {
+  padding: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navigation__list {
+  list-style-type: none;
+  transition: opacity 0.3s ease-in-out;
+  // opacity: 0;
+  pointer-events: none;
+}
+
+.navigation__link {
+  display: inline-block;
+  position: relative;
+  line-height: normal;
+  transition: all 0.3s ease;
+}
+
+.navigation__link:hover {
+  background-color: #03045e;
+  color: #e46e0f;
+}
+
+.navigation__link:active {
+  top: 0.1rem;
+}
+
+.navigation__checkbox:checked~.navigation__nav {
+  display: grid;
+  opacity: 1;
+}

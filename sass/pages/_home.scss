@@ -1,0 +1,101 @@
+.section-home {
+
+  background-color: #eaf0f5;
+  backdrop-filter: blur(10%);
+
+  padding: 12rem 0 14rem 0;
+
+
+  @include respond(tab-port) {
+
+    padding: 12rem 0 12rem 0;
+  }
+
+  @include respond(phone) {
+
+    // padding: 6rem 0 0rem 0;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+
+.section-education {
+  padding: 8rem 0 8rem 0;
+
+  // background-color: black;
+  // position: relative;
+  @include respond(tab-port) {
+    // display: none;
+    padding: 6rem 0 6rem 0;
+
+  }
+
+
+}
+
+.section-project {
+  background-color: #eaf0f5;
+  padding: 8rem 0;
+
+  @include respond(phone) {
+      padding: 6rem 0 12rem 0;
+  }
+
+
+}
+
+.section-about {
+  padding: 8rem 0;
+  // padding: 8rem 0 6rem 0;
+  // background-color: beige;
+  // padding-bottom: 10rem;
+}
+
+.section-contact {
+  // position: relative;
+  padding: 15rem 0;
+  background-image: linear-gradient(to left top, $color-white, rgba($color-grey-dark-2, .25));
+
+}
+
+.contact {
+
+
+  background-image: linear-gradient(to right bottom,
+
+
+      rgba($color-primary-dark, 0.1) 50%,
+      rgba($color-grey-dark-2, .5) 100%,
+      transparent 55%),
+    url(/img/contact.jpg);
+
+
+
+
+
+  background-size: cover;
+  background-position: center;
+
+
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: all .3s;
+
+  &:hover {
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .30);
+    transition: all .3s;
+  }
+
+  // width: 75%;
+  height: 54rem;
+  width: 114rem;
+  margin: 0 auto;
+  text-align: center;
+
+
+  &__form {
+    // width: 100%;
+    // padding: 6rem;
+  }
+}

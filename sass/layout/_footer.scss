@@ -1,0 +1,56 @@
+footer {
+  // background-color: #03001C;
+  background-color: #030427;
+  // height: 10vh;
+  color: $color-grey-light-2;
+  // align-items: center;
+  font-size: 1.5rem;
+  text-align: center;
+  // word-spacing: normal;
+  letter-spacing: .12rem;
+  line-height: 3rem;
+  padding-bottom: 1.2rem;
+  padding-top: 1.2rem;
+
+
+  // .footer__span {
+  // align-items: center;
+  // display: block;
+  // font-size: 1.5rem;
+  // letter-spacing: .1rem;
+  // display: inline-block;
+
+
+
+  // }
+
+}
+
+.link {
+
+  &:link,
+  &:visited {
+    color: $color-grey-light-1;
+    text-decoration: none;
+    // background-color: $color-grey-dark-3;
+
+    // text-transform: uppercase;
+    display: inline-block;
+    transition: all .2s;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-primary-dark;
+  }
+
+  &2:hover {
+    background-color: $color-grey-dark-3;
+
+    
+    box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    transform: scale(1.2);
+  }
+
+
+}

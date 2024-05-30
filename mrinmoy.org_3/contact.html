@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+
+    <link rel="stylesheet" href="sass/main.css">
+
+    <title>mrinmoy - home</title>
+  </head>
+
+  <body>
+    <!-- <div class="top-news"><a href="https://mrinmoy.me">mrinmoy.me</a></div> -->
+
+  <header class="navigation">
+    <!-- <h1 href="#" class="logo" id="logo">Mrinmoy.me</h1> -->
+    <h1 href="index.html" class="logo " id="logo">Mrinmoy.org</h1>
+  
+  
+    <!-- <input type="checkbox" class="navigation__checkbox" id="navi-toggle"> -->
+  
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onchange="toggleLogoVisibility(event)">
+  
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+    <div class="navigation__background">&nbsp; </div>
+  
+    <!-- <nav class="navigation__nav" onclick="uncheckCheckbox()"> -->
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="index.html" class="navigation__link" onclick="uncheckCheckbox()">Home</a></li>
+        <li class="navigation__item"><a href="index.html#education" class="navigation__link"
+            onclick="uncheckCheckbox()">Education</a>
+        </li>
+        <li class="navigation__item"><a href="index.html#projects" class="navigation__link" onclick="uncheckCheckbox()">Projects</a>
+        </li>
+        <li class="navigation__item"><a href="index.html#about" class="navigation__link" onclick="uncheckCheckbox()">About</a>
+        </li>
+  
+        <li class="navigation__item contact_hidden"><a href="#contact" class="navigation__link "
+            onclick="uncheckCheckbox()">Contact</a>
+        </li>
+        <!-- <li class="navigation__item"><a href="#" class="navigation__link" onclick="uncheckCheckbox()">About</a></li> -->
+      </ul>
+    </nav>
+    <a href="contact.html"><button class="nav-btn">Contact</button></a>
+  </header>
+    <!-- 
+    <div style="padding: 2rem;"></div>
+    <a href="#" class="btn"> click me</a>
+    <a href="#" class="btn btn-r"> click me</a>
+    <a href="#" class="btn btn-i"> <span>click me</span></a> -->
+
+
+    <main>
+      <section class="section-contact">
+
+        <div class="row">
+          <div class="contact ">
+            <div class="contact__form">
+              <!-- <div class="group_items">  -->
+              <!-- <div class=" u-center-item"> -->
+              <div class="heading-2 u-margin-top-small ">
+                CONTACT ME
+
+
+              </div>
+              <!-- </div> -->
+
+
+
+              <div class="form__group">
+
+              </div>
+              <div class="form__group u-margin-top-small">
+                <input type="text" class="form__input" placeholder="Full Name" id="name">
+                <label for="name" class="form__label">Full name</label>
+              </div>
+              <div class="form__group">
+                <input type="email" class="form__input" placeholder="Email address" id="email">
+                <label for="email" class="form__label">Email address</label>
+              </div>
+              <div class="form__group">
+                <textarea name="messege" id="messege" class="form__input input_message"></textarea>
+                <!-- <textarea type="messege" class="form__input " placeholder="messege" id="messege"> -->
+                <!-- <label for="messege" class="form__label">Message</label> -->
+              </div>
+              <div class="form__group u-margin-top-small">
+                <a href="#" class="btn btn-r btn_color-blu">contact</a>
+              </div>
+
+            </div>
+
+
+
+          </div>
+          <!-- </div> -->
+
+
+        </div>
+
+      </section>
+
+
+
+    </main>
+    <footer>
+      <p>Build and Design by <a href="#" class="link link2">MRINMOY CHAKRABORTY. </a></p>
+      <p>Copyright &copy; <a href="#" class="link "> mrinmoy.me</a></p>
+
+    </footer>
+
+
+
+  </body>

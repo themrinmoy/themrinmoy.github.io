@@ -1,0 +1,137 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-text;
+  // color: red !important;
+}
+
+
+
+
+
+.heading-primary {
+  // background-color: rebeccapurple;
+
+  transition: all .3s;
+
+  color: transparent;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-image: linear-gradient(to right bottom,
+      rgba($color-tertiary-dark, .80),
+      rgba($color-tertiary-light, 1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  &:hover {
+    transform: scale(1.03);
+    transition: all .3s;
+
+    // filter: drop-shadow(0 0 2.5rem $color-primary-dark);
+  }
+}
+
+.heading-secondary {
+
+  @include respond(phone) {
+    font-size: 4rem;
+    letter-spacing: .8rem;
+  }
+
+  text-transform: uppercase;
+
+  font-size: 5rem;
+  letter-spacing: 2rem;
+  // transform: all .2s;
+  justify-content: center;
+  display: inline-block;
+  color: transparent;
+  background-image: linear-gradient(to right, $color-primary-dark, $color-primary-light);
+  // background-image: linear-gradient(to right,
+  //   $color-primary-light,
+  //     $color-primary-dark);
+  transition: all .2s;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  &:hover  {
+    // text-shadow: .5rem .5rem 2rem rgba($color: #000000, $alpha: .2);
+    transform: scale(1.04);
+    transition: all .2s;
+
+  
+  }
+
+}
+
+.heading-2 {
+  font-size: 5rem;
+  color: #003459;
+  transition: all .3s;
+  letter-spacing: .7rem;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+  }
+
+
+}
+
+
+
+
+// .heading-tertiary {
+
+//   font-family: Besley;
+//   font-size: 5rem;
+//   font-style: italic;
+//   font-weight: 500;
+//   line-height: 4.7rem;
+//   letter-spacing: 0em;
+//   text-align: justified;
+
+//   &_text {
+//     padding-top: 3rem;
+//     font-family: Raleway;
+//     font-size: 2.5rem;
+//     font-weight: 500;
+//     line-height: 2.7rem;
+//     letter-spacing: 0em;
+//     text-align: justified;
+//   }
+
+//   &_sub {
+
+//     font-family: Raleway;
+//     font-size: 2.5rem;
+//     font-weight: 600;
+//     line-height: 2.7rem;
+//     letter-spacing: 0em;
+//     // text-align: justified;
+//     color: $color-primary;
+
+//     &_1 {
+//       padding-top: .6rem;
+//       font-family: Raleway;
+//       font-size: 2rem;
+//       font-weight: 500;
+//       line-height: 2.2rem;
+//       letter-spacing: 0em;
+//       text-align: justified;
+//     }
+
+//     &_2 {
+//       font-family: Raleway;
+//       font-size: 20px;
+//       font-weight: 600;
+//       line-height: 22px;
+//       letter-spacing: 0em;
+//       text-align: justified;
+//     }
+//   }
+// }

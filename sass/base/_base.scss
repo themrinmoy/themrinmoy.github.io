@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  // scroll-snap-type: proximity;
+}
+
+a {
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+    @include respond(tab-land) {
+        // width < 1200?
+        font-size: 56.25%; // 1 rem = 9px (asume) , 9/16 =56.25%
+      }
+    
+      @include respond(tab-port) {
+        // width < 900
+        // font-size: 45%; //1 rem = 8px (asume) , 8/16 =50%
+        font-size: 50%;
+      }
+    
+      // @include respond(phone) {
+      //     font-size: 28%;
+      // }
+    
+      @include respond(big-desktop) {
+        // font-size: 60%; //1 rem = 12px (asume) , 12/16 =75%
+      }
+}
+
+body {
+    // font-family: "Lato", sans-serif;
+    //   font-weight: 400;
+    //   line-height: 1.7;
+      // color: $color-text;
+// box-sizing: border-box;
+// background-color: rgb(33, 39, 39) !important;
+}
+
+
+// @media (max-width: 600px) {
+//   html{
+// display: hide;
+//   }
+//   body{
+
+//   }
+
+// }

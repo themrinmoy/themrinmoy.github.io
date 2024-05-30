@@ -1,0 +1,46 @@
+.tool1__img {
+  // background-color: antiquewhite;
+  // margin: 2rem;
+  // transition: all 2s;
+
+  &:not(:last-child) {
+    // margin-right: 2rem;
+  }
+
+  display:inline-flex;
+  // border-radius: 2rem;
+  // min-height: 3rem;
+
+  &-1 {
+    position: absolute !important;
+    // background-color: rgb(236, 138, 9);
+    // opacity: 0;
+    transition: all .2s;
+  }
+
+  &-2 {
+    // position: absolute !important;
+    // box-sizing: inherit;
+    opacity: 0;
+    transition: all .2s;
+  }
+
+  transition: all .2s;
+
+
+
+}
+
+.tool1__img:hover .tool1__img-1 {
+  opacity: 0;
+  transition: all .2s;
+}
+
+.tool1__img:hover .tool1__img-2 {
+  // background-color: rgb(236, 138, 9);
+  opacity: 1;
+  transition: all .2s;
+
+}
+
+

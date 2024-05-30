@@ -1,0 +1,104 @@
+.education {
+  width: 75%;
+  min-width: 1rem;
+  margin: 0 auto; // to  center  it
+
+  box-shadow: 0rem 3rem 6rem rgba($color-black, .2);
+  background-color: rgba($color-white, .6);
+  border-radius: 3px;
+  // padding-top: 3rem;
+  // padding-bottom: 3rem;
+  // padding: 5rem;
+  // padding-left: 9rem;
+  padding: 4rem 5rem 4rem 9rem;
+  font-size: $default-font-size;
+  transform: skewX(12deg);
+  display: flex;
+  gap: 3%;
+  padding: auto;
+  padding: auto;
+padding: auto;
+padding: auto;
+
+  // to resize the text and other element position
+  &>* {
+    transform: skewX(-12deg);
+  }
+
+  &__shape {
+    width: 15rem;
+    // background-color: aqua;
+    // float: left;
+    // -webkit-shape-outside: circle(50% at 50% 50%)
+    // shape-outside: circle (50% );
+    // shape-outside: circle (50% at 50% 50%);
+    // clip-path: circle(50% at 50% 50%);
+    // clip-path: circle(60% at 60% 60%);
+    position: relative;
+    // transform: translateX(-3rem) skewX(-12deg);
+    transform: skewX(-12deg);
+
+    border-radius: 15rem;
+  }
+
+  &__img {
+    // height: auto;
+    // width: 100%;
+    // transform: translateX(-4rem) scale(140%);
+    // transform: translateX(-4rem) ; to left shift the item or picture
+    transition: all 0.5s;
+    transform: translateX(-.2rem) scale(1.2);
+  }
+
+  &__text {
+    height: 85%;
+    margin: auto 0;
+
+    transform: skewX(-12deg);
+    // padding-left: 5rem;
+    // padding-top: 2rem;
+    // margin-left: 20rem;
+    // background-color: red;
+  }
+
+  &__caption {
+    width: 10rem;
+    // display: block;
+    border-radius: .5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 170%);
+    background-color: rgba(143, 143, 123, 0.356);
+    
+    // color: $color-white;
+    color: #fdfdfde1;
+    // color: inherit;
+    // -webkit-text-stroke: .2px ;
+    // text-shadow: 1rem;
+    // font-size: bold;
+    font-weight: 900;
+    // text-transform: uppercase;
+    backface-visibility: hidden;
+    opacity: hidden;
+    text-align: center;
+    transition: all .5s;
+    opacity: 0;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    // transition: all .5s;
+    transform: translate(-47%, -20%);
+  }
+
+  &:hover &__img {
+    // opacity: .5;
+    transform: translate(-.2rem) scale(1);
+    filter: blur(.1rem);
+    transition: all .5s;
+  }
+
+
+
+}
