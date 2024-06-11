@@ -246,7 +246,9 @@ body {
   }
 }
 .btn-r {
-  border-radius: 1rem;
+  border-radius: 4rem;
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
 }
 .btn_color-blue {
   background-color: rgba(12, 13, 88, 0.9921568627) !important;
